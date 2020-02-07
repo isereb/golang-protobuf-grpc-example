@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protox;
+
+message ExampleRequest {
+    string message = 1;
+    int32 number = 2;
+}
+
+message ExampleResponse {
+    string greeting = 1;
+    string response = 2;
+}
+
+service RequestHandler {
+    rpc HandleOne (ExampleRequest) returns (ExampleResponse);
+    rpc HandleTwo (ExampleRequest) returns (ExampleResponse);
+}
