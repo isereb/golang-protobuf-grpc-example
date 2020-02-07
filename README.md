@@ -3,6 +3,7 @@
 This project demonstrates client-server architecture, where client serves gRPC and client serves HTTP. When request is made to the client, client calls server via gRPC using protobuf and then translates it to HTTP and returns JSON.
 
 Server port: 4040
+
 Client port: 8080
 
 Quick demo:
